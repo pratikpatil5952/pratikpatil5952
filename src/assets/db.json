@@ -1,0 +1,49 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "firstName": "Ganesh",
+      "lastName": "Jogdand",
+      "designation": "Developer",
+      "emailId": "ganesh.198j@gmail.com",
+      "address": "Nigdi Pune",
+      "mobile": "8484912609",
+      "pincode": "411044",
+      "companyName": "Infinix"
+    },
+    {
+      "firstName": "Pratik",
+      "lastName": "Patil",
+      "designation": "Tester",
+      "emailId": "pratik@gmail.com",
+      "address": "Chinchwad Pune",
+      "mobile": "9784513548",
+      "pincode": "411035",
+      "companyName": "Tcs",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "firstName": "Nilesh",
+      "lastName": "Doke",
+      "designation": "Jr Developer",
+      "emailId": "nilesh123@gmail.com",
+      "address": "Ravet Pune",
+      "mobile": "9784513789",
+      "pincode": "411037",
+      "companyName": "Amdocs"
+    }
+  ],
+  "company": [
+    {
+      "id": 2,
+      "companyName": "Infinix",
+      "owner": "Pratik Patil",
+      "emailId": "pratik123@gmail.com",
+      "established": "2023",
+      "address": "Chinchwad",
+      "technology": "Web Development",
+      "contact": 94484512
+    }
+  ]
+}

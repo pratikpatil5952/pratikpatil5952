@@ -1,0 +1,90 @@
+<section class="vh-100 gradient-custom">
+  
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Company Registration Form</h3>
+              <form [formGroup]="compReg">
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline">
+                      <input type="text" class="form-control form-control-lg" formControlName="companyName"/>
+                      <label class="form-label" for="companyName">Company Name</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline">
+                      <input type="text" id="lastName" class="form-control form-control-lg" formControlName="owner"/>
+                      <label class="form-label" for="owner">Owner</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+    
+                      <div class="form-outline">
+                        <input type="text" id="email" class="form-control form-control-lg" formControlName="emailId"/>
+                        <label class="form-label" for="emailId">Email Id</label>
+                      </div>
+    
+                    </div>
+                    <div class="col-md-6 mb-4">
+    
+                      <div class="form-outline">
+                        <input type="text" id="established" class="form-control form-control-lg" formControlName="established"/>
+                        <label class="form-label" for="established">Established Year</label>
+                      </div>
+    
+                    </div>
+                  </div>
+  
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div class="form-outline">
+                      <input type="number" id="contact" class="form-control form-control-lg" formControlName="contact"/>
+                      <label class="form-label" for="contact">Contact</label>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4 pb-2">
+  
+                    <div class="form-outline">
+                      <input type="text" id="technology" class="form-control form-control-lg"  formControlName="technology"/>
+                      <label class="form-label" for="technology">Technology</label>
+                    </div>
+  
+                  </div>
+                </div>
+  
+                <div class="row">
+                    <div class="form-outline">
+                        <input type="text" id="addr" class="form-control form-control-lg"  formControlName="address"/>
+                        <label class="form-label" for="address">Address</label>
+                      </div>
+                </div>
+  
+                <div class="mt-4 pt-2">
+                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" (click)="saveCompany()"/>
+                 
+                </div>
+  
+              </form>
+            </div>
+          </div>
+         
+        </div>
+        <app-company-display></app-company-display>
+      </div>
+    </div>
+  </section>
+<router-outlet></router-outlet>

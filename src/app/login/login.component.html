@@ -1,0 +1,27 @@
+<body class="main">
+  
+    <div class="wrapper">
+        <div class="logo">
+            <img src="https://img.freepik.com/free-vector/vector-logo-illustration-eagle-gradient-colorful-style_474888-1664.jpg?size=626&ext=jpg&ga=GA1.1.1622833585.1697268290&semt=sph" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            &nbsp;Infinix
+        </div>
+        <form class="p-3 mt-3">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="userName" id="userName" placeholder="Username" [(ngModel)]="loginForm.user">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password" [(ngModel)]="loginForm.password">
+            </div>
+            <button class="btn mt-3" (click)="login(loginForm.user,loginForm.password)">Login</button>
+        </form><br>
+        <div class="text-center fs-6">
+            <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+        </div>
+      </div>
+      
+<router-outlet></router-outlet>
+</body>
